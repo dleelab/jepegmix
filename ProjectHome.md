@@ -1,0 +1,1 @@
+Joint Effect on Phenotype of eQTLs/functional SNPs associated with a Gene from mixed ethnicity cohorts

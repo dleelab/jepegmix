@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>JEPEGMIX by dleelab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">JEPEGMIX</h1>
+      <h2 class="project-tagline">JEPEG for mixed ethnicity cohorts</h2>
+      <a href="https://github.com/dleelab/jepegmix" class="btn">View on GitHub</a>
+      <a href="https://github.com/dleelab/jepegmix/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/dleelab/jepegmix/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h2>
+<a id="citing-jepegmix" class="anchor" href="#citing-jepegmix" aria-hidden="true"><span class="octicon octicon-link"></span></a>Citing JEPEGMIX</h2>
+
+<p><strong><em>JEPEGMIX: a summary statistics based tool for gene-level joint testing of functional variants</em></strong>, Donghyung Lee; Vernell S. Williamson; Tim B. Bigdeli; Brien P. Riley; Bradley T. Webb; Ayman H. Fanous; Kenneth S. Kendler; Vladimir I. Vladimirov; Silviu-Alin Bacanu; <strong>Submitted</strong>.</p>
+
+<h2>
+<a id="acknowledgement" class="anchor" href="#acknowledgement" aria-hidden="true"><span class="octicon octicon-link"></span></a>Acknowledgement</h2>
+
+<p><strong>This work is supported by the National Institutes of Health with grants R25DA26119, R21MH100560, R21AA022717 and P50AA022537.</strong></p>
+
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/US-NIH-NIDA-Logo.svg/440px-US-NIH-NIDA-Logo.svg.png" height="100px">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/US-NIH-NIMH-Logo.svg/280px-US-NIH-NIMH-Logo.svg.png" height="100px">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/72/US-NIH-NIAAA-Logo.svg/440px-US-NIH-NIAAA-Logo.svg.png" height="100px"></p>
+
+<h2>
+<a id="download-jepegmix" class="anchor" href="#download-jepegmix" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download JEPEGMIX</h2>
+
+<p>The current release (Version 0.1.0) of JEPEGMIX is for a Linux user. The pre-compiled executables for other operating systems (e.g.,  Windows, MacOS) will be available soon. The latest source codes of JEPEGMIX are available upon request (dustorm_at_gmail_dot_com)</p>
+
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Direct download link</strong></th>
+<th align="left"><strong>Version</strong></th>
+<th align="left"><strong>Release Date</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="">JEPEGMIX for a Linux user</a></td>
+<td align="left">v0.1.0</td>
+<td align="left">07/13/2015</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="download-reference-panels" class="anchor" href="#download-reference-panels" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download Reference Panels</h2>
+
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Direct download link</strong></th>
+<th align="left"><strong>Number of Samples</strong></th>
+<th align="left"><strong>Number of populations</strong></th>
+<th align="left"><strong>NCBI build</strong></th>
+<th align="left"><strong>Release Date</strong></th>
+<th align="left"><strong>Note</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://drive.google.com/file/d/0B_9H56XID17SLWJaWjlYekxkVkU/view?usp=sharing">1000 Genomes Phase1 Release3</a></td>
+<td align="left">1092</td>
+<td align="left">14</td>
+<td align="left">build 37 (hg19)</td>
+<td align="left">Nov. 23 2010</td>
+<td align="left">Includes chr1-chr22</td>
+</tr>
+</tbody>
+</table>
+
+<p>Here are the 1000 Genome population abbreviations used by JEPEGMIX. AFR is an abbreviation for African; AMR for admixed American; ASN for East Asian; EUR for European. </p>
+
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Population Abbreviation</strong></th>
+<th align="left"><strong>Number of Subjects</strong></th>
+<th align="left"><strong>Super Population</strong></th>
+<th align="left"><strong>Population Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">ASW</td>
+<td align="left">61</td>
+<td align="left">AFR</td>
+<td align="left">African Ancestry in Southwest US</td>
+</tr>
+<tr>
+<td align="left">CEU</td>
+<td align="left">85</td>
+<td align="left">EUR</td>
+<td align="left">Utah residents (CEPH) with Northern and Western European ancestry</td>
+</tr>
+<tr>
+<td align="left">CHB</td>
+<td align="left">97</td>
+<td align="left">ASN</td>
+<td align="left">Han Chinese in Beijing, China</td>
+</tr>
+<tr>
+<td align="left">CHS</td>
+<td align="left">100</td>
+<td align="left">ASN</td>
+<td align="left">Southern Han Chinese</td>
+</tr>
+<tr>
+<td align="left">CLM</td>
+<td align="left">60</td>
+<td align="left">AMR</td>
+<td align="left">Colombian in Medellin, Colombia</td>
+</tr>
+<tr>
+<td align="left">FIN</td>
+<td align="left">93</td>
+<td align="left">EUR</td>
+<td align="left">Finnish in Finland</td>
+</tr>
+<tr>
+<td align="left">GBR</td>
+<td align="left">89</td>
+<td align="left">EUR</td>
+<td align="left">British in England and Scotlant</td>
+</tr>
+<tr>
+<td align="left">IBS</td>
+<td align="left">14</td>
+<td align="left">EUR</td>
+<td align="left">Iberian populations in Spain</td>
+</tr>
+<tr>
+<td align="left">JPT</td>
+<td align="left">89</td>
+<td align="left">ASN</td>
+<td align="left">Japanese in Tokyo, Japan</td>
+</tr>
+<tr>
+<td align="left">LWK</td>
+<td align="left">97</td>
+<td align="left">AFR</td>
+<td align="left">Luhya in Wenbuye, Kenya</td>
+</tr>
+<tr>
+<td align="left">MXL</td>
+<td align="left">66</td>
+<td align="left">AMR</td>
+<td align="left">Mexican Ancestry from Los Angeles, USA</td>
+</tr>
+<tr>
+<td align="left">PUR</td>
+<td align="left">55</td>
+<td align="left">AMR</td>
+<td align="left">Puerto Rican in Puerto Rico</td>
+</tr>
+<tr>
+<td align="left">TSI</td>
+<td align="left">98</td>
+<td align="left">EUR</td>
+<td align="left">Toscani in Italia</td>
+</tr>
+<tr>
+<td align="left">YRI</td>
+<td align="left">88</td>
+<td align="left">AFR</td>
+<td align="left">Yoruba in Ibadan, Nigeria</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="download-snp-annotation-data" class="anchor" href="#download-snp-annotation-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download SNP Annotation Data</h2>
+
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Direct download link</strong></th>
+<th align="left"><strong>Version</strong></th>
+<th align="left"><strong>Release Date</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://drive.google.com/file/d/0B8CSKKDoI0UmNVdNenRPNmtYbkk/view?usp=sharing">SNP annotations</a></td>
+<td align="left">v0.2.0</td>
+<td align="left">11/20/2014</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="jepegmix-input-file-format" class="anchor" href="#jepegmix-input-file-format" aria-hidden="true"><span class="octicon octicon-link"></span></a>JEPEGMIX Input File Format</h2>
+
+<h3>
+<a id="when-study-allele-frequency-information-is-available" class="anchor" href="#when-study-allele-frequency-information-is-available" aria-hidden="true"><span class="octicon octicon-link"></span></a>When study allele frequency information is available</h3>
+
+<p>JEPEGMIX takes as input a plain text file with rows and columns denoting SNPs and variables, respectively. The first line of the input file should be column names/headers. Data entries on each line should be separated by white space. 
+The file should contain eight columns: 1) rsid (SNP ID), 2) chr (chromosome number), 3) bp (base pair position), 4) a1 (reference allele), 5) a2 (alternative allele), 6) z (normally distributed GWAS/meta-analysis summary statistic, i.e. two-tailed Z-score), 7) info (imputation information) and 8) af1 (cohort reference allele frequency (RAF)). JEPEGMIX does not require the input data to be sorted in ascending order by chromosome number and base pair position or SNP ID. Here is a sample JEPEGMIX input file.</p>
+
+<pre><code>rsid        chr  bp         a1  a2  z          info    af1
+
+rs1000109   9    117908733  C   T  -0.714464   0.890   0.384
+
+rs10001109  4    44904653   C   T   0.721919   0.731   0.198
+
+rs1000112   22   28273339   C   G  -0.583666   0.445   0.042 
+
+rs10001127  4    130547376  T   C   0.069329   0.999   0.210 
+
+rs1000113   5    150240076  T   C  -1.447288   1.0     0.189
+</code></pre>
+
+<h3>
+<a id="when-study-allele-frequency-information-is-not-available" class="anchor" href="#when-study-allele-frequency-information-is-not-available" aria-hidden="true"><span class="octicon octicon-link"></span></a>When study allele frequency information is not available</h3>
+
+<p>Genome-wide association studies/meta-analyses typically do not provide study allele frequency information due to privacy issues. However, information about ethnic proportion of the study samples is usually available from the publications. By using the prior ethnic information, users can run JEPEGMIX for association summary data lacking allele frequency information. In this case, JEPEGMIX does not require study allele frequency information (the column ‘af1’) in the input file, but additionally JEPEGMIX needs one more input text file (population weight file) specifying ethnic proportion of the study samples. Here is a sample JEPEGMIX input file with 5 SNPs, which should be used when allele frequency information is not available.</p>
+
+<pre><code>rsid        chr  bp         a1  a2   z         info  
+
+rs1000109   9    117908733  C   T   -0.714464  0.890
+
+rs10001109  4    44904653   C   T    0.721919  0.731
+
+rs1000112   22   28273339   C   G   -0.583666  0.445
+
+rs10001127  4    130547376  T   C    0.069329  0.999
+
+rs1000113   5    150240076  T   C   -1.447288  1.0
+</code></pre>
+
+<p><strong>Note:</strong> If the input summary data comes a different genome assembly (e.g. NCBI build 36 (hg18)) than NCBI build 37 (hg19), it needs to be converted by the user to NCBI build 37 (hg19) using a software, called <a href="https://genome.ucsc.edu/cgi-bin/hgLiftOver">liftover</a>, from UCSC.</p>
+
+<p>Here is a sample JEPEGMIX population weight file, which is needed when cohort allele frequency information is not available. </p>
+
+<pre><code>pop wgt   
+
+ASW 0.1
+
+GBR 0.3
+
+FIN 0.2
+
+CEU 0.25
+
+IBS 0.15
+</code></pre>
+
+<p>The first line of the population weight file should be column names/headers. The file should contain two columns: 1) pop (population abbreviation) and 2) wgt (population proportion). The columns of data should be separated by white space. The weight file name should be specified with the ‘--populationWeight’ option.</p>
+
+<h2>
+<a id="jepegmix-output-file-format" class="anchor" href="#jepegmix-output-file-format" aria-hidden="true"><span class="octicon octicon-link"></span></a>JEPEGMIX output file format</h2>
+
+<p>The JEPEGMIX/JEPEG output file has nine columns: 1)  gene name (geneid), 2) chi-square test statistic value (chisq), 3) degrees of freedom (df), 4) JEPEGMIX p-value (jepegmix_pval), 5) number of functional SNPs associated with gene (num_snp), 6) top functional category (top_categ), 7) top category p-value (top_categ_pval), 8) top functional SNP ID (top_snp) and 9) top SNP p-value (top_snp_pval). The first line of the output file is column names/headers.  Here is a sample JEPEGMIX(JEPEG) output file, with 5 genes:</p>
+
+<pre><code>geneid    chisq    df  jepeg_pval   num_snp   top_categ   top_categ_pval   top_snp      top_snp_pval
+
+FCGR3B    14.926   1   1.80E-05     2         PFS         1.10E-04         rs5030738    5.08E-05
+
+CSPG4P2Y  14.774   2   3.29E-05     5         TRN         1.21E-04         rs10828664   5.55E-05
+
+SLC7A7    19.902   3   3.40E-05     33        TRN         3.51E-04         rs9304810    1.07E-03
+
+EDARADD   13.957   2   3.93E-05     2         PFS         1.86E-04         rs966365     7.80E-06
+
+FAM71D    13.026   1   4.34E-05     26        TAR         3.07E-04         rs45515505   1.53E-04
+</code></pre>
+
+<h2>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Option</strong></th>
+<th align="left"><strong>Short Flag</strong></th>
+<th align="left"><strong>Parameter</strong></th>
+<th align="left"><strong>Default</strong></th>
+<th align="left"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">--version</td>
+<td align="left">-v</td>
+<td align="left">none</td>
+<td align="left">none</td>
+<td align="left">Prints version information.</td>
+</tr>
+<tr>
+<td align="left">--help</td>
+<td align="left">-h</td>
+<td align="left">none</td>
+<td align="left">none</td>
+<td align="left">Outputs a full description of all JEPEGMIX options.</td>
+</tr>
+<tr>
+<td align="left">--impute</td>
+<td align="left">none</td>
+<td align="left">none</td>
+<td align="left">none</td>
+<td align="left">Imputes summary statistics of unmeasured functional SNPs using DISTMIX before JEPEGMIX analysis.</td>
+</tr>
+<tr>
+<td align="left">--reference</td>
+<td align="left">-r</td>
+<td align="left">filename</td>
+<td align="left">none</td>
+<td align="left">The filename of the reference population data.</td>
+</tr>
+<tr>
+<td align="left">--referenceIndex</td>
+<td align="left">-i</td>
+<td align="left">filename</td>
+<td align="left">none</td>
+<td align="left">The filename of the reference population index data.</td>
+</tr>
+<tr>
+<td align="left">--annotation</td>
+<td align="left">-a</td>
+<td align="left">filename</td>
+<td align="left">none</td>
+<td align="left">The filename of the SNP annotation data set.</td>
+</tr>
+<tr>
+<td align="left">--output</td>
+<td align="left">-o</td>
+<td align="left">filename</td>
+<td align="left">out.jepegmix</td>
+<td align="left">The filename of JEPEGMIX(JEPEG) output</td>
+</tr>
+<tr>
+<td align="left">--windowSize</td>
+<td align="left">-n</td>
+<td align="left">decimal</td>
+<td align="left">1.0</td>
+<td align="left">The size of the DISTMIX prediction window (Mb).</td>
+</tr>
+<tr>
+<td align="left">--wingSize</td>
+<td align="left">-m</td>
+<td align="left">decimal</td>
+<td align="left">0.5</td>
+<td align="left">The size of the wing padded on the left and right of the DISTMIX prediction window (Mb).</td>
+</tr>
+<tr>
+<td align="left">--populationWeight</td>
+<td align="left">-w</td>
+<td align="left">filename</td>
+<td align="left">none</td>
+<td align="left">The filename of the population weight data.</td>
+</tr>
+<tr>
+<td align="left">--impInfoCutoff</td>
+<td align="left">none</td>
+<td align="left">decimal</td>
+<td align="left">0.3</td>
+<td align="left">The imputation information cutoff.</td>
+</tr>
+</tbody>
+</table>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/dleelab/jepegmix">JEPEGMIX</a> is maintained by <a href="https://github.com/dleelab">dleelab</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+

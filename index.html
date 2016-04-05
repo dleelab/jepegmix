@@ -5,7 +5,7 @@
     <title>JEPEGMIX by dleelab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
@@ -20,12 +20,12 @@
 
     <section class="main-content">
       <h2>
-<a id="citing-jepegmix" class="anchor" href="#citing-jepegmix" aria-hidden="true"><span class="octicon octicon-link"></span></a>Citing JEPEGMIX</h2>
+<a id="citing-jepegmix" class="anchor" href="#citing-jepegmix" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Citing JEPEGMIX</h2>
 
-<p><strong><em>JEPEGMIX: a summary statistics based tool for gene-level joint testing of functional variants</em></strong>, Donghyung Lee; Vernell S. Williamson; Tim B. Bigdeli; Brien P. Riley; Bradley T. Webb; Ayman H. Fanous; Kenneth S. Kendler; Vladimir I. Vladimirov; Silviu-Alin Bacanu; <strong>Submitted</strong>.</p>
+<p><strong><em>JEPEGMIX: a summary statistics based tool for gene-level joint testing of functional variants</em></strong>, Donghyung Lee; Vernell S. Williamson; Tim B. Bigdeli; Brien P. Riley; Bradley T. Webb; Ayman H. Fanous; Kenneth S. Kendler; Vladimir I. Vladimirov; Silviu-Alin Bacanu; <em>Bioinformatics</em> (2016) Jan 15; 32(2):295-7. <a href="http://bioinformatics.oxfordjournals.org/content/32/2/295.full.pdf+html">doi:10.1093/bioinformatics/btv567</a>.</p>
 
 <h2>
-<a id="acknowledgement" class="anchor" href="#acknowledgement" aria-hidden="true"><span class="octicon octicon-link"></span></a>Acknowledgement</h2>
+<a id="acknowledgement" class="anchor" href="#acknowledgement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Acknowledgement</h2>
 
 <p><strong>This work is supported by the National Institutes of Health with grants R25DA26119, R21MH100560, R21AA022717 and P50AA022537.</strong></p>
 
@@ -34,7 +34,7 @@
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/72/US-NIH-NIAAA-Logo.svg/440px-US-NIH-NIAAA-Logo.svg.png" height="100px"></p>
 
 <h2>
-<a id="download-jepegmix" class="anchor" href="#download-jepegmix" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download JEPEGMIX</h2>
+<a id="download-jepegmix" class="anchor" href="#download-jepegmix" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download JEPEGMIX</h2>
 
 <p>The current release (Version 0.1.0) of JEPEGMIX is for a Linux user. The pre-compiled executables for other operating systems (e.g.,  Windows, MacOS) will be available soon. The latest source codes of JEPEGMIX are available upon request (dustorm_at_gmail_dot_com)</p>
 
@@ -56,7 +56,7 @@
 </table>
 
 <h2>
-<a id="download-reference-panels" class="anchor" href="#download-reference-panels" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download Reference Panels</h2>
+<a id="download-reference-panels" class="anchor" href="#download-reference-panels" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download Reference Panels</h2>
 
 <table>
 <thead>
@@ -181,7 +181,7 @@
 </table>
 
 <h2>
-<a id="download-snp-annotation-data" class="anchor" href="#download-snp-annotation-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download SNP Annotation Data</h2>
+<a id="download-snp-annotation-data" class="anchor" href="#download-snp-annotation-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download SNP Annotation Data</h2>
 
 <table>
 <thead>
@@ -201,10 +201,10 @@
 </table>
 
 <h2>
-<a id="jepegmix-input-file-format" class="anchor" href="#jepegmix-input-file-format" aria-hidden="true"><span class="octicon octicon-link"></span></a>JEPEGMIX Input File Format</h2>
+<a id="jepegmix-input-file-format" class="anchor" href="#jepegmix-input-file-format" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>JEPEGMIX Input File Format</h2>
 
 <h3>
-<a id="when-study-allele-frequency-information-is-available" class="anchor" href="#when-study-allele-frequency-information-is-available" aria-hidden="true"><span class="octicon octicon-link"></span></a>When study allele frequency information is available</h3>
+<a id="when-study-allele-frequency-information-is-available" class="anchor" href="#when-study-allele-frequency-information-is-available" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>When study allele frequency information is available</h3>
 
 <p>JEPEGMIX takes as input a plain text file with rows and columns denoting SNPs and variables, respectively. The first line of the input file should be column names/headers. Data entries on each line should be separated by white space. 
 The file should contain eight columns: 1) rsid (SNP ID), 2) chr (chromosome number), 3) bp (base pair position), 4) a1 (reference allele), 5) a2 (alternative allele), 6) z (normally distributed GWAS/meta-analysis summary statistic, i.e. two-tailed Z-score), 7) info (imputation information) and 8) af1 (cohort reference allele frequency (RAF)). JEPEGMIX does not require the input data to be sorted in ascending order by chromosome number and base pair position or SNP ID. Here is a sample JEPEGMIX input file.</p>
@@ -223,7 +223,7 @@ rs1000113   5    150240076  T   C  -1.447288   1.0     0.189
 </code></pre>
 
 <h3>
-<a id="when-study-allele-frequency-information-is-not-available" class="anchor" href="#when-study-allele-frequency-information-is-not-available" aria-hidden="true"><span class="octicon octicon-link"></span></a>When study allele frequency information is not available</h3>
+<a id="when-study-allele-frequency-information-is-not-available" class="anchor" href="#when-study-allele-frequency-information-is-not-available" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>When study allele frequency information is not available</h3>
 
 <p>Genome-wide association studies/meta-analyses typically do not provide study allele frequency information due to privacy issues. However, information about ethnic proportion of the study samples is usually available from the publications. By using the prior ethnic information, users can run JEPEGMIX for association summary data lacking allele frequency information. In this case, JEPEGMIX does not require study allele frequency information (the column ‘af1’) in the input file, but additionally JEPEGMIX needs one more input text file (population weight file) specifying ethnic proportion of the study samples. Here is a sample JEPEGMIX input file with 5 SNPs, which should be used when allele frequency information is not available.</p>
 
@@ -260,7 +260,7 @@ IBS 0.15
 <p>The first line of the population weight file should be column names/headers. The file should contain two columns: 1) pop (population abbreviation) and 2) wgt (population proportion). The columns of data should be separated by white space. The weight file name should be specified with the ‘--populationWeight’ option.</p>
 
 <h2>
-<a id="jepegmix-output-file-format" class="anchor" href="#jepegmix-output-file-format" aria-hidden="true"><span class="octicon octicon-link"></span></a>JEPEGMIX output file format</h2>
+<a id="jepegmix-output-file-format" class="anchor" href="#jepegmix-output-file-format" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>JEPEGMIX output file format</h2>
 
 <p>The JEPEGMIX/JEPEG output file has nine columns: 1)  gene name (geneid), 2) chi-square test statistic value (chisq), 3) degrees of freedom (df), 4) JEPEGMIX p-value (jepegmix_pval), 5) number of functional SNPs associated with gene (num_snp), 6) top functional category (top_categ), 7) top category p-value (top_categ_pval), 8) top functional SNP ID (top_snp) and 9) top SNP p-value (top_snp_pval). The first line of the output file is column names/headers.  Here is a sample JEPEGMIX(JEPEG) output file, with 5 genes:</p>
 
@@ -278,7 +278,7 @@ FAM71D    13.026   1   4.34E-05     26        TAR         3.07E-04         rs455
 </code></pre>
 
 <h2>
-<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h2>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Options</h2>
 
 <table>
 <thead>
@@ -392,4 +392,3 @@ FAM71D    13.026   1   4.34E-05     26        TAR         3.07E-04         rs455
 
   </body>
 </html>
-

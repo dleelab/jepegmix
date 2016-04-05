@@ -1,5 +1,5 @@
 ##Citing JEPEGMIX
-**_JEPEGMIX: a summary statistics based tool for gene-level joint testing of functional variants_**, Donghyung Lee; Vernell S. Williamson; Tim B. Bigdeli; Brien P. Riley; Bradley T. Webb; Ayman H. Fanous; Kenneth S. Kendler; Vladimir I. Vladimirov; Silviu-Alin Bacanu; **Submitted**.
+**_JEPEGMIX: a summary statistics based tool for gene-level joint testing of functional variants_**, Donghyung Lee; Vernell S. Williamson; Tim B. Bigdeli; Brien P. Riley; Bradley T. Webb; Ayman H. Fanous; Kenneth S. Kendler; Vladimir I. Vladimirov; Silviu-Alin Bacanu; *Bioinformatics* (2016) Jan 15; 32(2):295-7. [doi:10.1093/bioinformatics/btv567](http://bioinformatics.oxfordjournals.org/content/32/2/295.full.pdf+html).
 
 ##Acknowledgement
 **This work is supported by the National Institutes of Health with grants R25DA26119, R21MH100560, R21AA022717 and P50AA022537.**

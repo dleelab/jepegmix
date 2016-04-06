@@ -53,7 +53,7 @@
 </thead>
 <tbody>
 <tr>
-<td align="left"><a href="">JEPEGMIX for a Linux user</a></td>
+<td align="left"><a href="https://drive.google.com/file/d/0B8CSKKDoI0UmR3ZQMm9KNkNDenM/view?usp=sharing">JEPEGMIX for a Linux user</a></td>
 <td align="left">v0.2.0</td>
 <td align="left">04/06/2016</td>
 </tr>
@@ -381,21 +381,21 @@ FAM71D    13.026   1   4.34E-05        26        TAR         3.07E-04         rs
 <h2>
 <a id="getting-started-with-examples" class="anchor" href="#getting-started-with-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting started with examples</h2>
 
-<p>The users are required to download a pre-compiled JEPEGMIX executable (jepegmix), a sample input file (sample.pgc2.scz.txt) and a sample population weight file (pop_wgt_pgc2.txt) from the <strong>Download JEPEGMIX</strong> section above. The SNP annotation data set should be downloaded from <strong>Download SNP annotation data</strong> section above. A tgz-compressed directory with 1000 Genomes reference panel datasets also should be downloaded and can be uncompressed using <strong>tar</strong> with the <strong>-zxvf</strong> options. Assume that the reference panel data file and its index file named as "1kg.geno.gz" and "1kg.index.gz" respectively are stored in a directory /path/to/reference/ and that the annotation dataset named as "jepeg.snp.annotations.v0.2.0.txt" and the sample population weight file (pop_wgt_pgc2.txt) are stored in directories /path/to/annotation/ and /path/to/weight/, respectively. </p>
+<p>The users are required to download a pre-compiled JEPEGMIX executable (jepegmix), a sample input file (sample.input.txt) and a sample population weight file (sample.pop.wgt.txt) from the <strong>Download JEPEGMIX</strong> section above. The SNP annotation data set should be downloaded from <strong>Download SNP annotation data</strong> section above. A tgz-compressed directory with 1000 Genomes reference panel datasets also should be downloaded and can be uncompressed using <strong>tar</strong> with the <strong>-zxvf</strong> options. Assume that the reference panel data file and its index file named as "1kg.geno.gz" and "1kg.index.gz" respectively are stored in a directory /path/to/reference/ and that the annotation dataset named as "jepeg.snp.annotations.v0.2.0.txt" and the sample population weight file (sample.pop.wgt.txt) are stored in directories /path/to/annotation/ and /path/to/weight/, respectively. </p>
 
-<p><strong>Scenario 1:</strong> Let's assume that the sample input data (association summary statistics) is generated from whole genome sequencing data. So, we want to perform JEPEGMIX analysis without DISTMIX imputation and store the results in a text file named as "jepegmix.pgc2.scz.output.txt". For this scenario, the following command can be used.</p>
+<p><strong>Scenario 1:</strong> Let's assume that the sample input data (association summary statistics) is generated from whole genome sequencing data. So, we want to perform JEPEGMIX analysis without DISTMIX imputation and store the results in a text file named as "jepegmix.output.txt". For this scenario, the following command can be used.</p>
 
-<div class="highlight highlight-source-shell"><pre><span class="pl-k">&gt;&gt;</span> ./jepegmix sample.pgc2.scz.txt -o jepegmix.pgc2.scz.output.txt -i /path/to/reference/1kg.index.gz -r /path/to/reference/1kg.geno.gz -a /path/to/annotation/jepeg.snp.annotations.v0.2.0.txt -w /path/to/weight/pop_wgt_pgc2.txt</pre></div>
+<div class="highlight highlight-source-shell"><pre><span class="pl-k">&gt;&gt;</span> ./jepegmix sample.input.txt -o jepegmix.output.txt -i /path/to/reference/1kg.index.gz -r /path/to/reference/1kg.geno.gz -a /path/to/annotation/jepeg.snp.annotations.v0.2.0.txt -w /path/to/weight/sample.pop.wgt.txt</pre></div>
 
 <p><strong>Scenario 2:</strong> If we want to impute unmeasured functional SNPs in our input data using DISTMIX before running JEPEGMIX analysis, we should use "--impute" option. </p>
 
-<div class="highlight highlight-source-shell"><pre><span class="pl-k">&gt;&gt;</span> ./jepegmix --impute sample.pgc2.scz.txt -o jepegmix.pgc2.scz.output.txt -i /path/to/reference/1kg.index.gz -r /path/to/reference/1kg.geno.gz -a /path/to/annotation/jepeg.snp.annotations.v0.2.0.txt -w /path/to/weight/pop_wgt_pgc2.txt</pre></div>
+<div class="highlight highlight-source-shell"><pre><span class="pl-k">&gt;&gt;</span> ./jepegmix --impute sample.input.txt -o jepegmix.output.txt -i /path/to/reference/1kg.index.gz -r /path/to/reference/1kg.geno.gz -a /path/to/annotation/jepeg.snp.annotations.v0.2.0.txt -w /path/to/weight/sample.pop.wgt.txt</pre></div>
 
 <p>Here, we didn't set the size of the prediction window and wing by using options "--windowSize" and "--wingSize", so JEPEGMIX will use the default size (1 Mb for the DISTMIX prediction window and 0.5 Mb for the wing).</p>
 
 <p><strong>Scenario 3:</strong> Here, we want to set <strong>the size of the DISTMIX prediction window (--windowSize or -n)</strong> to be 0.6 Mb and <strong>the size of the wing padded each side of the prediction window (--wingSize or -m)</strong> to be 0.2 Mb. For this scenario, we can use the following command.</p>
 
-<div class="highlight highlight-source-shell"><pre><span class="pl-k">&gt;&gt;</span> ./jepegmix --impute sample.pgc2.scz.txt -o jepegmix.pgc2.scz.output.txt -i /path/to/reference/1kg.index.gz -r /path/to/reference/1kg.geno.gz  -a /path/to/annotation/jepeg.snp.annotations.v0.2.0.txt -w /path/to/weight/pop_wgt_pgc2.txt -n 0.6 -m 0.2</pre></div>
+<div class="highlight highlight-source-shell"><pre><span class="pl-k">&gt;&gt;</span> ./jepegmix --impute sample.input.txt -o jepegmix.output.txt -i /path/to/reference/1kg.index.gz -r /path/to/reference/1kg.geno.gz  -a /path/to/annotation/jepeg.snp.annotations.v0.2.0.txt -w /path/to/weight/sample.pop.wgt.txt -n 0.6 -m 0.2</pre></div>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/dleelab/jepegmix">JEPEGMIX</a> is maintained by <a href="https://github.com/dleelab">dleelab</a>.</span>
